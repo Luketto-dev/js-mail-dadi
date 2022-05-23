@@ -16,12 +16,14 @@ let message = document.querySelector(".message")
 buttonSubmit.addEventListener("click", function() {
     // creo variabile utente trovato = false
     let userFound = false;
+
+    let user;
     // ciclo sul mio array utenti
     for (let i = 0; i < users.length; i++) {
         
         if (userFound != true) {
             // salvo ogni singlo utente in una variabile
-            let user = users[i]
+            user = users[i]
             if (emailFromInput.value === user) {
                 console.log("email trovata")
                 userFound = true;
