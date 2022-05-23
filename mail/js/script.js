@@ -14,13 +14,11 @@ let message = document.querySelector(".message")
 
 // creo avento al clik del bottone controlla
 buttonSubmit.addEventListener("click", function() {
-    
+    // creo variabile utente trovato = false
+    let userFound = false;
     // ciclo sul mio array utenti
     for (let i = 0; i < users.length; i++) {
         
-        // creo variabile utente trovato = false
-        let userFound = false;
-
         if (userFound != true) {
             // salvo ogni singlo utente in una variabile
             let user = users[i]
