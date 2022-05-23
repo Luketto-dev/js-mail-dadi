@@ -14,11 +14,11 @@ let message = document.querySelector(".message")
 
 // creo avento al clik del bottone controlla
 buttonSubmit.addEventListener("click", function() {
-    // creo variabile utente trovato = false
+    // creo variabile utenteTrovato = false
     let userFound = false;
     //creo variabile user
     let user;
-    // ciclo sul mio array utenti
+    // ciclo su array utenti
     for (let i = 0; i < users.length; i++) {
         
         // se userFound è diverso da true 
@@ -28,9 +28,11 @@ buttonSubmit.addEventListener("click", function() {
             // controllo se emailFromInput corrisponde a un elemento dell array
             if (emailFromInput.value === user) {
                 console.log("email trovata")
+                message.innerHTML = emailFromInput.value + " può accedere"
                 userFound = true;
             }else{
                 console.log("email non trovata")
+                message.innerHTML = emailFromInput.value + " non può accedere, prova con un'altra email"
             }
         }
         
