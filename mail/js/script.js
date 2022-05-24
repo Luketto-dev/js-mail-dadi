@@ -2,14 +2,13 @@
 const users = ["mario@gmail.com", "luca@gmail.com", "nando@alice.it", "rita@tiscali.com", "ludovica@tiscali.it"]
 
 // prendo input scritto dall utente
-let emailFromInput = document.querySelector("#email")
+let emailFromInput = document.getElementById("#email")
 
 //prendo il bottone per controllare se l email è tra quelli degli utenti
 let buttonSubmit = document.querySelector(".button-submit")
 
 // prendo div per inserire un messaggio 
 let message = document.querySelector(".message")
-
 
 
 // creo avento al clik del bottone controlla
